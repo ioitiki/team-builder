@@ -36,5 +36,20 @@ public class TeamTest {
     assertEquals(1, testTeam.getTeamId());
   }
 
+  @Test
+  public void find_returnsTeamWithSameId_testTeam2() {
+    Team.clear();
+    Team testTeam1 = new Team("The Best");
+    Team testTeam2 = new Team("Cool Kids");
+    assertEquals(Team.find(testTeam2.getTeamId()), testTeam2);
+  }
+
+  @Test
+  public void getMembers_initiallyReturnsEmptyList_ArrayList() {
+    Team.clear();
+    Team testTeam = new Team("The Best");
+    assertEquals(0, testTeam.getMembers().size());
+  }
+
 
 }

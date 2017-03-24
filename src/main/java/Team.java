@@ -31,4 +31,12 @@ public class Team {
     return mTeamId;
   }
 
+  public static Team find(int teamId) {
+    return teams.get(teamId - 1);
+  }
+
+  public List<Member> getMembers() {
+    return members;
+  }
+
 }
