@@ -19,4 +19,8 @@ public class Team {
     return mTeamName;
   }
 
+  public static List<Team> all() {
+    return teams;
+  }
+
 }
