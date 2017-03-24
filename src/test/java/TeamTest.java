@@ -45,11 +45,49 @@ public class TeamTest {
   }
 
   @Test
+  public void addMember_addsMemberToListForATeam_true() {
+    Team testTeam = new Team("The Best");
+    Member testMember = new Member("John Smith", "Java Dev");
+    testTeam.addMember(testMember);
+    assertEquals(true, testTeam.getMembers().contains(testMember));
+  }
+
+  @Test
   public void getMembers_initiallyReturnsEmptyList_ArrayList() {
     Team.clear();
     Team testTeam = new Team("The Best");
     assertEquals(0, testTeam.getMembers().size());
   }
+
+  @Test
+  public void getMembers_returnsAListOfAllMembersInATeam_2() {
+    Team.clear();
+    Team testTeam = new Team("The Best");
+    Member testMember1 = new Member("John Smith", "Java Dev");
+    Member testMember2 = new Member("Bob Smit", "Web Dev");
+    testTeam.addMember(testMember1);
+    testTeam.addMember(testMember2);
+    assertEquals(2, testTeam.getMembers().size());
+  }
+
+  @Test
+  public void getMemberId_returnsIdForAMemberOfASpecificTeam_1() {
+    Team.clear();
+    Team testTeam1 = new Team("The Best");
+    Member testMember1Team1 = new Member("John Smith", "Java Dev");
+    Member testMember2Team1 = new Member("Bob Smit", "Web Dev");
+    testTeam1.addMember(testMember1Team1);
+    testTeam1.addMember(testMember2Team1);
+    Team testTeam2 = new Team("Cool Kids");
+    Member testMember1Team2 = new Member("Joe Bob", "Python Dev");
+    Member testMember2Team2 = new Member("Anne Ridge", "Ruby Dev");
+    testTeam2.addMember(testMember1Team2);
+    testTeam2.addMember(testMember2Team2);
+    assertEquals(1, testTeam1.getMemberId(testMember1Team1));
+    assertEquals(2, testTeam2.getMemberId(testMember2Team2));
+  }
+
+
 
 
 }
