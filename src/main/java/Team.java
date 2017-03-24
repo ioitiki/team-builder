@@ -16,7 +16,7 @@ public class Team {
   }
 
   public String getTeamName() {
-    return "";
+    return mTeamName;
   }
 
 }
