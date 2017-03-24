@@ -7,7 +7,7 @@ public class Member {
     mJob = job;
   }
 
-  public String getName() {
+  public String getMemberName() {
     return mName;
   }
 

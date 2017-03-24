@@ -8,4 +8,10 @@ public class TeamTest {
     Team testTeam = new Team("The Best");
     assertEquals(true, testTeam instanceof Team);
   }
+
+  @Test
+  public void getTeamName_teamInstantiatesWithTeamName_TheBest() {
+    Team testTeam = new Team("The Best");
+    assertEquals("The Best", testTeam.getTeamName());
+  }
 }

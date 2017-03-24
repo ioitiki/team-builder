@@ -15,4 +15,8 @@ public class Team {
     mMemberId = members.size();
   }
 
+  public String getTeamName() {
+    return "";
+  }
+
 }
