@@ -71,7 +71,7 @@ public class TeamTest {
   }
 
   @Test
-  public void getMemberId_returnsIdForAMemberOfASpecificTeam_1() {
+  public void getMemberId_returnsIdForAMemberOfASpecificTeam() {
     Team.clear();
     Team testTeam1 = new Team("The Best");
     Member testMember1Team1 = new Member("John Smith", "Java Dev");
