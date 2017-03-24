@@ -10,9 +10,15 @@ public class MemberTest {
   }
 
   @Test
-  public void getName_memberInstantiatesWithAName_JohnSmith() {
+  public void getName_memberInstantiatesWithName_JohnSmith() {
     Member testMember = new Member("John Smith", "Java Dev");
     assertEquals("John Smith", testMember.getName());
+  }
+
+  @Test
+  public void getJob_memberInstantiatesWithJob_JavaDev() {
+    Member testMember = new Member("John Smith", "Java Dev");
+    assertEquals("John Smith", testMember.getJob());
   }
 
 }
