@@ -22,4 +22,11 @@ public class TeamTest {
     assertEquals(true, Team.all().contains(testTeam1));
     assertEquals(true, Team.all().contains(testTeam2));
   }
+
+  @Test
+  public void clear_emptiesAllTeamsFromList_0() {
+    Team testTeam = new Team("The Best");
+    Team.clear();
+    assertEquals(0, Team.all().size());
+  }
 }

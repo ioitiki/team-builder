@@ -23,4 +23,10 @@ public class Team {
     return teams;
   }
 
+  public static void clear() {
+    // teams.clear();
+  }
+
+
+
 }
