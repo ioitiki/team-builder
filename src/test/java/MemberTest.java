@@ -18,7 +18,7 @@ public class MemberTest {
   @Test
   public void getJob_memberInstantiatesWithJob_JavaDev() {
     Member testMember = new Member("John Smith", "Java Dev");
-    assertEquals("John Smith", testMember.getJob());
+    assertEquals("Java Dev", testMember.getJob());
   }
 
 }

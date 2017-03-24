@@ -19,7 +19,7 @@ public class Member {
   }
 
   public String getJob() {
-    return "";
+    return mJob;
   }
 
 
