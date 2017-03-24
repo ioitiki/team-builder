@@ -15,7 +15,7 @@ public class Member {
   }
 
   public String getName() {
-    return "test";
+    return mName;
   }
 
 
