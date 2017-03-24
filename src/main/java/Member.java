@@ -14,5 +14,11 @@ public class Member {
     mId = members.size();
   }
 
+  public String getName() {
+    return "test";
+  }
+
+
+
 
 }

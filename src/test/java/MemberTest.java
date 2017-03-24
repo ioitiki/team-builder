@@ -9,4 +9,10 @@ public class MemberTest {
     assertEquals(true, testMember instanceof Member);
   }
 
+  @Test
+  public void getName_memberInstantiatesWithAName_JohnSmith() {
+    Member testMember = new Member("John Smith", "Java Dev");
+    assertEquals("John Smith", testMember.getName());
+  }
+
 }
