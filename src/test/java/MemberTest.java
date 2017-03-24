@@ -21,4 +21,6 @@ public class MemberTest {
     assertEquals("Java Dev", testMember.getJob());
   }
 
+
+
 }
