@@ -27,4 +27,8 @@ public class Team {
     teams.clear();
   }
 
+  public int getTeamId() {
+    return 0;
+  }
+
 }
