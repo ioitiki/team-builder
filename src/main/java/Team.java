@@ -24,9 +24,7 @@ public class Team {
   }
 
   public static void clear() {
-    // teams.clear();
+    teams.clear();
   }
-
-
 
 }
