@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #DAE3E5;
+}

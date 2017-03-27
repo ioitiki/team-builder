@@ -1,4 +1,4 @@
-<h2>$team.getTeamName()</h2>
+<h1> Team: $team.getTeamName()</h1>
 
 #if ($members.isEmpty())
   <p>There are no Members on this team.</p>
@@ -10,4 +10,5 @@
 </ul>
 #end
 
-<a href="/teams/$team.getTeamId()/members/new">Add A New Member</a>
+<a class="btn btn-danger" href="/teams/$team.getTeamId()/members/new">Add A New Member</a>
+<a class="btn btn-danger" href="/">Home</a>
