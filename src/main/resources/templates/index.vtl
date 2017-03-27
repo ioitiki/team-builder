@@ -3,6 +3,9 @@
 #else
 <ul>
   #foreach ($team in $teams)
-  <li><a href="#">$team.getTeamName()</a></li>
+  <li><a href="/teams/$team.getTeamId()">$team.getTeamName()</a></li>
   #end
+</ul>
 #end
+
+<a href="/teams/new">Add New Team</a>

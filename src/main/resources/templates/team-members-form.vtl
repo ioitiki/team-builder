@@ -1,0 +1,15 @@
+<h1>Add a Member</h1>
+
+<form action="/teams/$team.getTeamId()/members" method="post">
+  <input id="memberId" name="memberId" type="hidden" value="$team.getMemberId()">
+
+  <div class="form-group">
+    <label for="name">Member Name</label>
+    <input id="name" name="name" type="text" class="form-control">
+    <label for="job">Member Job</label>
+    <input id="job" name="job" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Member</button>
+
+</form>

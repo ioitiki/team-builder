@@ -46,4 +46,9 @@ public class Team {
   public int getMemberId(Member member) {
     return members.indexOf(member) + 1;
   }
+
+  public Member findMember(int memberId) {
+    return members.get(memberId - 1);
+  }
+
 }

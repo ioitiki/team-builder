@@ -1,0 +1,13 @@
+<h2>$team.getTeamName()</h2>
+
+#if ($members.isEmpty())
+  <p>There are no Members on this team.</p>
+#else
+<ul>
+  #foreach ($member in $members)
+  <li><a href="/teams/$team.getTeamId()/members/$team.getMemberId($member)">$member.getMemberName()</a></li>
+  #end
+</ul>
+#end
+
+<a href="/teams/$team.getTeamId()/members/new">Add A New Member</a>
